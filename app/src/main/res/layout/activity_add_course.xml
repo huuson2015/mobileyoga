@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Nội dung phía trên -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="24dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Course"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="16dp"
+                    android:paddingLeft="16dp"/>
+            </LinearLayout>
+
+            <!-- Day of the Week -->
+            <TextView
+                android:id="@+id/dayOfTheWeek_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Day of the Week"
+                android:textSize="16sp"
+                android:paddingLeft="16dp"/>
+
+            <EditText
+                android:id="@+id/etDayOfWeek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Monday, Tuesday, etc ..."
+                android:inputType="text"
+                android:paddingLeft="16dp"/>
+
+            <!-- Time of the Course -->
+            <TextView
+                android:id="@+id/timeOfCourse_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time of the Course"
+                android:textSize="16sp"
+                android:paddingLeft="16dp"/>
+
+            <EditText
+                android:id="@+id/etTimeOfCourse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="10:00-11:00"
+                android:inputType="text"
+                android:paddingLeft="16dp"/>
+
+            <!-- Capacity -->
+            <TextView
+                android:id="@+id/capacity_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Capacity"
+                android:textSize="16sp"
+                android:paddingLeft="16dp"/>
+
+            <EditText
+                android:id="@+id/etCapacity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="10 person"
+                android:inputType="number"
+                android:paddingLeft="16dp"/>
+
+            <!-- Duration -->
+            <TextView
+                android:id="@+id/duration_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Duration"
+                android:textSize="16sp"
+                android:paddingLeft="16dp"/>
+
+            <EditText
+                android:id="@+id/etDuration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="60 minute"
+                android:inputType="text"
+                android:paddingLeft="16dp"/>
+
+            <!-- Price per Class -->
+            <TextView
+                android:id="@+id/pricePerClass_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price per Class"
+                android:textSize="16sp"
+                android:paddingLeft="16dp"/>
+
+            <EditText
+                android:id="@+id/etPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="10$"
+                android:inputType="number"
+                android:paddingLeft="16dp"/>
+
+            <!-- Type of Class -->
+            <TextView
+                android:id="@+id/typeOfClass_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type of Class"
+                android:textSize="16sp"
+                android:paddingLeft="16dp"/>
+
+            <RadioGroup
+                android:id="@+id/rgTypeOfClass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp">
+
+                <RadioButton
+                    android:id="@+id/flow_yoga_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Flow Yoga"/>
+
+                <RadioButton
+                    android:id="@+id/aerial_yoga_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aerial Yoga"/>
+
+                <RadioButton
+                    android:id="@+id/family_yoga_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Family Yoga"/>
+            </RadioGroup>
+
+            <!-- Description -->
+            <TextView
+                android:id="@+id/description_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textSize="16sp"
+                android:paddingLeft="16dp"
+                android:layout_marginTop="18dp"/>
+
+            <EditText
+                android:id="@+id/etDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter description"
+                android:inputType="textMultiLine"
+                android:minLines="3"
+                android:paddingLeft="16dp"/>
+
+            <!-- Buttons for Update and Delete -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnAddCourse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:text="Add Course"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</FrameLayout>
